@@ -1,0 +1,46 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: white;
+}
+
+.navbar .logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: #28429a;
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-right button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid rgb(227, 55, 55);
+    font-size: 16px;
+    background: #28429a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover{
+    background-color: rgb(19, 15, 15)
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #28429a;
+}
