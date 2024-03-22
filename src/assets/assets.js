@@ -2,6 +2,8 @@
 import logo from './logo.png'
 import logo2 from "./logo2.png"
 import Logo1 from "./Logo1.jpg"
+import onboard1 from "./onboard1.png"
+import board from "./board.png"
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
 import menu_1 from './menu_1.png'
@@ -65,8 +67,9 @@ import parcel_icon from './parcel_icon.png'
 export const assets = {
     logo2,
     Logo1,
+    board,
     logo,
- 
+    onboard1,
     header_img,
     search_icon,
     rating_starts,
