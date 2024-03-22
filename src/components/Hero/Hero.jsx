@@ -22,7 +22,7 @@ const Hero = () => {
           <button>Rent</button>
           <button>Sale</button>
           <button>Shortlet</button>
-          <button className={ menu === "Services" ? "typeOfServices" : ""} onClick={()=>setMenu("typeOfServices")}>Services</button>
+          <button className={ menu === "Services" ? "typeOfServices" :""} onClick={()=>setMenu("typeOfServices")}>Services</button>
           <button>Hotel Booking</button>
 
         </div>
