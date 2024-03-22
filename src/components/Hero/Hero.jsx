@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Hero.css";
 
 const Hero = () => {
+
+  const style ={
+    display: "none",
+    visibility: "hidden"
+  }
+
+  const [menu, setMenu] = useState("")
   return (
     <div className="hero">
       <div className="hero-contents">
@@ -15,8 +22,9 @@ const Hero = () => {
           <button>Rent</button>
           <button>Sale</button>
           <button>Shortlet</button>
-          <button>Services</button>
+          <button className={ menu === "Services" ? "typeOfServices" : ""} onClick={()=>setMenu("typeOfServices")}>Services</button>
           <button>Hotel Booking</button>
+
         </div>
 
         <div className="searchbar">
@@ -45,12 +53,31 @@ const Hero = () => {
             <select name="propertySize" id="property">
               <option value="house">House</option>
               <option value="apartment">Apartment</option>
+              <option value="Penthouse">Penthouse</option>
+              <option value="Duplex">Duplex</option>
+              <option value="Mansion">Mansion</option>
+              <option value="Chalet">Chalet</option>
+              <option value="Studio">Studio</option>
+              <option value="Guest">Guest House</option>
+              <option value="Cabin">Cabin</option>
+              <option value="Castle">Castle</option>
+              <option value="Ranch">Ranch</option>
             </select>
           </div>
 
           <div className="budget">
           <label>Budget</label>
             <select name="budget" id="budgets">
+              <option value="budget">Budgets</option>
+              <option value="saab">Mid-Range</option>
+              <option value="affordable">Affordable</option>
+              <option value="luxury">Luxury</option>
+            </select>
+          </div>
+
+          <div className=" typeOfServices " >
+          <label>Budget</label>
+            <select name="budget" id="type">
               <option value="budget">Budgets</option>
               <option value="saab">Mid-Range</option>
               <option value="affordable">Affordable</option>

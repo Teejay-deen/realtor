@@ -1,83 +1,111 @@
-
-.hero{
-    height: 34vw;
-    margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size: contain;
-    position: relative;
+.hero {
+  height: 34vw;
+  margin: 30px auto;
+  background: url("/header_img.png") no-repeat;
+  background-size: contain;
+  position: relative;
 }
 
-.hero-contents{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1.5vw;
-    max-width: 50%;
-    bottom: 10%;
-    left: 6vw;
+.hero-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
 }
 
-.hero-contents h2{
-    color: white;
-    font-weight: 500;
-    font-size: max(3.5vw);
-    align-items: center;
+.hero-contents h2 {
+  color: white;
+  font-weight: 500;
+  font-size: max(3.5vw);
+  align-items: center;
 }
 
-.hero-contents p{
-    color: white;
-    font-size: 1vw;
+.hero-contents p {
+  color: white;
+  font-size: 1vw;
 }
 
-.button-menu{
-    display: flex;
-    gap: 10px;
-    padding: 10px 30px;
+.button-menu {
+  display: flex;
+  gap: 10px;
+  padding: 10px 30px;
 }
 
-.button-menu button{
-    border: 5px solid white;
-    background:rgb(219, 219, 190);
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-size: 14px;
-    border: none;
-    font-weight: 500;
-    transition: 0.3s;
+.button-menu button {
+  border: 5px solid white;
+  background: rgb(219, 219, 190);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  border: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.button-menu button:hover{
-    background: white;
-    color: tomato;
+.button-menu button:hover {
+  background: white;
+  color: tomato;
 }
 
-.searchbar{
-
-    display: flex;
-    padding-left: 30px;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+.searchbar {
+  display: flex;
+  padding-left: 30px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .searchbar button {
-    border-radius: 50px;
-    padding:  5px 30px;
-    border: none;
+  border-radius: 50px;
+  margin-top: 30px;
+  padding: 10px 40px;
+  border: none;
 }
 
-.searchbar label{
-    color: black;
-    margin-bottom: 100000px;
+.searchbar label {
+  color: black;
+  margin-bottom: 100000px;
 }
 
-#Looking{
+#Looking {
+  padding: 10px 90px;
+  padding-left: 10px;
+  margin-top: 10px;
+  color: gray;
+  border-radius: 8px;
+}
+
+#location {
+  padding: 10px 90px;
+  padding-left: 10px;
+  margin-top: 10px;
+  color: gray;
+  border-radius: 8px;
+}
+
+#property {
+  padding: 10px 90px;
+  padding-left: 10px;
+  margin-top: 10px;
+  color: gray;
+  border-radius: 8px;
+}
+
+#budgets{
     padding: 10px 90px;
     padding-left: 10px;
     margin-top: 10px;
     color: gray;
     border-radius: 8px;
+   
 }
 
+.typeOfServices{
+    display: none;
+    visibility: hidden;
 
+}
