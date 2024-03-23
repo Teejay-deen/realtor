@@ -15,6 +15,7 @@
   max-width: 50%;
   bottom: 10%;
   left: 6vw;
+  animation: fadeIn 4s;
 }
 
 .hero-contents h2 {
@@ -61,13 +62,15 @@
 
 .searchbar button {
   border-radius: 50px;
+  cursor: pointer;
   margin-top: 30px;
   padding: 10px 40px;
   border: none;
 }
 
 .searchbar label {
-  color: black;
+  color: white;
+  font-weight: 800;
   margin-bottom: 100000px;
 }
 
