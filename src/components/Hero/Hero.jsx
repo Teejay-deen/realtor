@@ -1,14 +1,43 @@
 import React, { useState } from "react";
 import "./Hero.css";
 
+const Looking = () => {
+  return (
+    <div className="looking">
+      <label>Looking for</label>
+      <select name="sale" id="Looking">
+        <option value="Sale">Sale</option>
+        <option value="Rent">Rent</option>
+      </select>
+    </div>
+  );
+};
+
+const Service = () => {
+  return (
+    <div className="looking">
+      <label>Service</label>
+      <select name="budget" id="Looking">
+        <option value="budget">Type of service</option>
+        <option value="saab">Mid-Range</option>
+        <option value="affordable">Affordable</option>
+        <option value="luxury">Luxury</option>
+      </select>
+    </div>
+  );
+};
+
+const types = {
+  service: <Service />,
+  looking: <Looking />,
+};
+
+const serviceKey = "service";
+const lookingKey = "looking";
+
 const Hero = () => {
+  const [type, setType] = useState(lookingKey);
 
-  const style ={
-    display: "none",
-    visibility: "hidden"
-  }
-
-  const [menu, setMenu] = useState("")
   return (
     <div className="hero">
       <div className="hero-contents">
@@ -19,22 +48,15 @@ const Hero = () => {
           Shortlet
         </p>
         <div className="button-menu">
-          <button>Rent</button>
+          <button onClick={() => setType(lookingKey)}>Rent</button>
           <button>Sale</button>
           <button>Shortlet</button>
-          <button className={ menu === "Services" ? "typeOfServices" :""} onClick={()=>setMenu("typeOfServices")}>Services</button>
+          <button onClick={() => setType(serviceKey)}>Services</button>
           <button>Hotel Booking</button>
-
         </div>
 
         <div className="searchbar">
-          <div className="looking">
-            <label>Looking for</label>
-            <select name="sale" id="Looking">
-              <option value="Sale">Sale</option>
-              <option value="Rent">Rent</option>
-            </select>
-          </div>
+          {types[type]}
 
           <div className="location">
             <label>Location</label>
@@ -66,7 +88,7 @@ const Hero = () => {
           </div>
 
           <div className="budget">
-          <label>Budget</label>
+            <label>Budget</label>
             <select name="budget" id="budgets">
               <option value="budget">Budgets</option>
               <option value="saab">Mid-Range</option>
@@ -75,18 +97,6 @@ const Hero = () => {
             </select>
           </div>
 
-          <div className=" typeOfServices " >
-          <label>Budget</label>
-            <select name="budget" id="type">
-              <option value="budget">Budgets</option>
-              <option value="saab">Mid-Range</option>
-              <option value="affordable">Affordable</option>
-              <option value="luxury">Luxury</option>
-            </select>
-          </div>
-        
-
-        
           <div className="button">
             <button>Search</button>
           </div>
