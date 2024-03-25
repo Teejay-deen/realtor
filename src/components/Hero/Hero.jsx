@@ -35,7 +35,7 @@ const types = {
 const serviceKey = "service";
 const lookingKey = "looking";
 
-const Hero = () => {
+const Hero = ({ category, setCategory }) => {
   const [type, setType] = useState(lookingKey);
 
   return (
@@ -47,7 +47,12 @@ const Hero = () => {
           Our Platform Buy Properties, Sell Properties, Rent Properties and
           Shortlet
         </p>
-        <div className="button-menu">
+        <div
+          onClick={() =>
+            setCategory(prev === item.menu_name ? "All" : item.menu_name)
+          }
+          className="button-menu"
+        >
           <button onClick={() => setType(lookingKey)}>Rent</button>
           <button>Sale</button>
           <button>Shortlet</button>
