@@ -9,6 +9,7 @@ import BecomeAgent from "./pages/Become an Agent/BecomeAgent";
 import ContactUs from "./pages/Contact Us/ContactUs";
 import { useState } from "react";
 import LoginPopUp from "./components/LoginPopUp/LoginPopUp";
+import SideBar from "./components/SideBar/SideBar";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -16,7 +17,7 @@ const App = () => {
   return (
     <>
       {/* adding the tenary operator for loginpopup */}
-      {showLogin ? <LoginPopUp setShowLogin={setShowLogin} /> : <></>}
+      {showLogin ? <LoginPopUp path="/Logined" setShowLogin={setShowLogin} /> : <></>}
       <div className="app">
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/faq" element={<Faq />} />
           <Route path="/become-agent" element={<BecomeAgent />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/Logined" element={<SideBar />} />
         </Routes>
       </div>
     </>
