@@ -35,12 +35,12 @@ const LoginPopUp = ({ setShowLogin }) => {
         </div>
         {currentState === Login ? (
           <p>
-            Create an new account ?{" "}
+            Create an new account ?
             <span onClick={() => setCurrentState(SignUp)}>Click here</span>
           </p>
         ) : (
           <p>
-            Already have an account ?{" "}
+            Already have an account ?
             <span onClick={() => setCurrentState(Login)}>Login here</span>
           </p>
         )}
