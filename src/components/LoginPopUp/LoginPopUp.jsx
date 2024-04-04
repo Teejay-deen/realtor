@@ -3,9 +3,8 @@ import "./LoginPopUp.css";
 import { assets } from "../../assets/assets";
 
 const LoginPopUp = ({ setShowLogin }) => {
-
-    const Login = "Login"
-    const SignUp = "Sign Up"
+  const Login = "Login";
+  const SignUp = "Sign Up";
   const [currentState, setCurrentState] = useState(Login);
   return (
     <div className="login-popup">
@@ -29,20 +28,20 @@ const LoginPopUp = ({ setShowLogin }) => {
           <input type="Password" placeholder="Your Password" required />
         </div>
 
-        <button>
-          {currentState === SignUp ? "Create Account" : Login }
-        </button>
+        <button>{currentState === SignUp ? "Create Account" : Login}</button>
         <div className="login-popup-condition">
           <input type="checkbox" required />
           <p>By continuing, i agree the terms of use and privacy policy.</p>
         </div>
         {currentState === Login ? (
           <p>
-            Create a new account ? <span onClick={()=>setCurrentState(SignUp)}>Click here</span>
+            Create a new account ?{" "}
+            <span onClick={() => setCurrentState(SignUp)}>Click here</span>
           </p>
         ) : (
           <p>
-            Already have an account ? <span onClick={()=>setCurrentState(Login)}>Login here</span>
+            Already have an account ?{" "}
+            <span onClick={() => setCurrentState(Login)}>Login here</span>
           </p>
         )}
       </form>
