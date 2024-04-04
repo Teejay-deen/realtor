@@ -34,7 +34,7 @@ const LoginPopUp = ({ setShowLogin }) => {
         </button>
         <div className="login-popup-condition">
           <input type="checkbox" required />
-          <p>By continuing, i agree the terms of use and privacy policy</p>
+          <p>By continuing, i agree the terms of use and privacy policy.</p>
         </div>
         {currentState === Login ? (
           <p>
