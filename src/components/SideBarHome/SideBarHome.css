@@ -1,0 +1,9 @@
+.side-bar-home{
+   display: flex;
+  padding: 10px 60px;
+   justify-content: center;
+}
+
+.sidebar{
+    display: flex;
+}

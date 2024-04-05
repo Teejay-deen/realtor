@@ -92,7 +92,7 @@ const Blog = () => {
 
         <div className="nav-menu">
           {menuItems.map(({ text, icon }) => (
-            <Link to="sidebar-home"><a
+            <Link to="/sidebar-home"><a
               href={<SideBarHome />}
               className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
             >
@@ -101,7 +101,11 @@ const Blog = () => {
 
               {!isExpanded && <div className="tooltip">{text}</div>}
             </a></Link>
+
+            
           ))}
+
+          
         </div>
       </div>
     </div>
