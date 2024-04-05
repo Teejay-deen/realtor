@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "./Blog.css";
 import { assets } from "../../assets/assets";
+import SideBarHome from "../../components/SideBarHome/SideBarHome";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const menuItems = [
     {
-      text: "Dashboard",
+      text: "Home",
       icon: "icon/home2.png",
     },
 
@@ -81,6 +83,7 @@ const Blog = () => {
             }
             onClick={() => setIsExpanded(!isExpanded)}
           >
+            {/* three hamburger line */}
             <span></span>
             <span></span>
             <span></span>
@@ -88,12 +91,16 @@ const Blog = () => {
         </div>
 
         <div className="nav-menu">
-          {menuItems.map(({text, icon}) => (
-            <a href="#" className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}>
+          {menuItems.map(({ text, icon }) => (
+            <Link to="sidebar-home"><a
+              href={<SideBarHome />}
+              className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
+            >
               <img src={icon} alt="" />
               {isExpanded && <p>{text}</p>}
-             {!isExpanded && <div className="tooltip">{text}</div>}
-            </a>
+
+              {!isExpanded && <div className="tooltip">{text}</div>}
+            </a></Link>
           ))}
         </div>
       </div>

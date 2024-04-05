@@ -10,6 +10,7 @@ import ContactUs from "./pages/Contact Us/ContactUs";
 import { useState } from "react";
 import LoginPopUp from "./components/LoginPopUp/LoginPopUp";
 import SideBar from "./components/SideBar/SideBar";
+import SideBarHome from "./components/SideBarHome/SideBarHome";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/become-agent" element={<BecomeAgent />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/Logined" element={<SideBar />} />
+          <Route path="/sidebar-home" element={<SideBarHome />} />
         </Routes>
       </div>
     </>

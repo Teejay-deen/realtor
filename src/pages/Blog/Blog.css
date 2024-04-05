@@ -116,7 +116,8 @@ display: none;
 .menu-item:hover{
     background-color: white ;
     text-align: center;
-    padding: 20px 10px 10px 10px;
+    color: tomato;
+    padding: 20px 50px 5px 5px;
 }
 
 .menu-item img {
@@ -138,6 +139,6 @@ display: none;
     padding: 4px 8px;
     border-radius: 15px 15px 15px 0;
     white-space: nowrap;
-    background-color: rgb(53, 162, 45);
-    border: 2px solid brown;
+    background-color: rgb(90, 45, 162);
+    border: 2px solid rgb(43, 12, 12);
 }
