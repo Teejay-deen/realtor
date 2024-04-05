@@ -28,7 +28,7 @@ const Navbar = ({setShowLogin}) => {
           </li>
         </Link>
 
-        <Link to="/blog">
+        <Link to="/sidebar-home">
           <li
             onClick={() => setMenu("Blog")}
             className={menu === "Blog" ? "active" : ""}

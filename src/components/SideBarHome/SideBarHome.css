@@ -1,9 +1,24 @@
-.side-bar-home{
-   display: flex;
+.side-bar-home {
+  display: flex;
   padding: 10px 60px;
-   justify-content: center;
+  justify-content: center;
 }
 
-.sidebar{
-    display: flex;
+.sidebar {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.text-field{
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    text-align: justify;
+    font: 100;
 }
