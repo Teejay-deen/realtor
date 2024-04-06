@@ -22,3 +22,7 @@
     text-align: justify;
     font: 100;
 }
+
+.profile-container{
+    display: flex;
+}

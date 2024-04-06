@@ -1,0 +1,10 @@
+.profile-container {
+  display: flex;
+  padding: 15px 66px;
+  gap: 10px;
+
+}
+
+.profile-name{
+    align-items: c;
+}
