@@ -4,6 +4,7 @@ import { assets } from "../../assets/assets";
 
 const ProfileContainer = () => {
   return (
+    
     <div className="pro">
       <div className="profile-container">
         <img src={assets.profile_icon} alt="" />

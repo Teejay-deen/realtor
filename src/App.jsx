@@ -14,7 +14,6 @@ import SideBarHome from "./components/SideBarHome/SideBarHome";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
-
   return (
     <>
       {/* adding the tenary operator for loginpopup */}
