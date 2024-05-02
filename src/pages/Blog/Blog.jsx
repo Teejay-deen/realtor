@@ -9,7 +9,7 @@ const Blog = () => {
 
   const menuItems = [
     {
-      text: "Hom",
+      text: "Home",
       icon: "icon/home2.png",
     },
 
